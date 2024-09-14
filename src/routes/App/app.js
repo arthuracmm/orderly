@@ -4,6 +4,8 @@ import MainHeader from "../../Components/mainHeader/mainHeader";
 import NewPosts from "../../Components/newPosts/newPosts";
 import AddPosts from "../../Components/AddPosts/AddPosts"
 
+
+
 function App() {
 
   return (
@@ -13,6 +15,7 @@ function App() {
       <main>
           <NewPosts/>
           <AddPosts/>
+ 
       </main>
     </div>
   );
