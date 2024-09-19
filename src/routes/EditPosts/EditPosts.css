@@ -1,0 +1,51 @@
+.bodyEditPosts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da viewport */
+    margin: 0; /* Remove a margem padrão */
+}
+.EditPosts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border: 1px solid #d8d8d8;
+    gap: 1rem;
+    width: 400px;
+    height: 400px;
+    padding: 3rem;
+    border-radius: 20px;
+}
+
+.EditPosts form input{
+    width: 20rem;
+    height: 2rem;
+    padding: 0 .3rem;
+    border: 1px solid #b1b1b1;
+    border-radius: 5;
+}
+
+.EditPosts form input:focus{
+    outline: none;
+}
+
+.EditPosts form input:last-child{
+    width: 6rem;
+    background-color: var(--color-three);
+    color: white;
+    border-radius: 10px;
+    transition: 150ms ease-in-out;
+}
+
+.EditPosts form input:last-child:hover{
+    background-color: var(--color-two);
+}
+
+.EditPosts form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}

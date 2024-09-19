@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 
 import App from './routes/App/app';
-import EditProducts from './routes/editProducts/editproducts'
-import PostProducts from './routes/postProducts/postproducts'
+import EditPosts from './routes/EditPosts/EditPosts'
+import AddPosts from './routes/AddPosts/AddPosts';
 
 
 const router = createBrowserRouter([
@@ -13,14 +13,13 @@ const router = createBrowserRouter([
         element : <App />
     },
     {
-        path : '/post',
-        element : <PostProducts />
+        path : '/edit/:id',
+        element : <EditPosts />
     },
     {
-        path : '/edit',
-        element : <EditProducts />
-    },
-
+    path : '/addpost',
+        element : <AddPosts />
+    }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
