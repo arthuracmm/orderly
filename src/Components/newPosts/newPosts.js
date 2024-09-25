@@ -40,7 +40,7 @@ function NewPosts() {
 
                                 <div className="btns">
                                 <button className="post-btn">Ver Mais</button>
-                                <button className="post-btn">Carrinho</button>
+                                <button className="post-btn">Comprar</button>
                                 <Link to={{pathname: `/edit/${post.id}`}}>
                                 <button className="post-btn edit-post">Edit</button>
                                 </Link>

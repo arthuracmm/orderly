@@ -1,13 +1,24 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import './EditPosts.css';
-import {useParams} from 'react-router-dom'
+import {useNavigate, useParams} from 'react-router-dom'
 
 function EditPosts(){
-  
+  const url = 'http://localhost:5000/produtos/'
   const {id} = useParams()
+  const [data, setData] = useState({
+      title: "",
+      description: "",
+      images: "",
+      price: "",
+      image1 : "",
+      image2 : "",
+      image3 : "",
+      image4 : ""
+    })
 
   useEffect(() => {
+
     axios.get(`http://localhost:5000/produtos/${id}`)
       .then((response) => {
         setData({
@@ -26,32 +37,15 @@ function EditPosts(){
       });
   }, [id]);
 
-  const url = 'http://localhost:5000/produtos'
-  const [data, setData] = useState({
-    title: "",
-    description: "",
-    images: "",
-    price: "",
-    image1 : "",
-    image2 : "",
-    image3 : "",
-    image4 : ""
-  })
+const navigate = useNavigate()
 
 function submit(e){
   e.preventDefault();
-  axios.post(url,{
-    title : data.title,
-    description : data.description,
-    price : data.price,
-    image1 : data.image1,
-    image2 : data.image2,
-    image3 : data.image3,
-    image4 : data.image4
-  })
-  .then(res => {
-    console.log(res.data)
-  })
+  axios.post(url + id, data)
+    .then(res => {
+        navigate('/')
+    })
+  .catch(err => console.log(err))
 }
 
 function handle(e){
