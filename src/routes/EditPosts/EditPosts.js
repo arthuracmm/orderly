@@ -4,9 +4,10 @@ import './EditPosts.css';
 import {useParams, useNavigate} from 'react-router-dom'
 
 function EditPosts(){
-  
+
   const {id} = useParams()
   const navigate = useNavigate();
+  
 
   const [data, setData] = useState({
     title: "",
@@ -65,9 +66,18 @@ function EditPosts(){
     console.log(newdata)
   }
 
+  function deletePost() {
+    if (window.confirm("Tem certeza que deseja deletar este produto?")) {
+      axios.delete(`http://localhost:5000/produtos/${id}`)
+        .then(() => navigate('/'))
+        .catch(err => console.error('Erro ao deletar', err));
+    }
+  }
+
   return(
     <div className='bodyEditPosts'>
-      <div className="EditPosts">
+      <div className="EditPosts"> 
+        <button onClick={deletePost }>Delete</button>
         <h1>Adicionar novo produto</h1>
         <form onSubmit={(e) => submit(e)}>
           <input onChange={(e) => handle(e)} id='title' value={data.title} placeholder='Título' type='text'/>
@@ -82,6 +92,6 @@ function EditPosts(){
       </div>
     </div>
   )
-    
+
   }
   export default EditPosts;
