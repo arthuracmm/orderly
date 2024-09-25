@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import axios from 'axios';
-import './AddPosts.css'
-
+import './AddPosts.css';
+import {useNavigate} from 'react-router-dom'
 function AddPosts(){
 
+  const navigate = useNavigate()
   const url = 'http://localhost:5000/produtos'
   const [data, setData] = useState({
     title: "",
@@ -28,6 +29,7 @@ function submit(e){
   })
   .then(res => {
     console.log(res.data)
+    navigate('/')
   })
 }
 

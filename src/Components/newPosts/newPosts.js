@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 function NewPosts() {
 
     const [posts, setPosts] = useState([])
-
     useEffect(() =>{
         axios.get("http://localhost:5000/produtos")
         .then((res) => {
