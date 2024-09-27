@@ -43,6 +43,7 @@ function handle(e){
 return(
   <div className='bodyEditPosts'>
     <div className="EditPosts">
+    <button onClick={() => navigate(-1) }>Voltar</button>
       <h1>Adicionar novo produto</h1>
       <form onSubmit={(e) => submit(e)}>
         <input onChange={(e) => handle(e)} id='title' value={data.title} placeholder='Título' type='text'/>
