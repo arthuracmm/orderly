@@ -5,6 +5,7 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import App from './routes/App/app';
 import EditPosts from './routes/EditPosts/EditPosts'
 import AddPosts from './routes/AddPosts/AddPosts';
+import SobrePage from './routes/SobrePage/SobrePage';
 
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
     {
     path : '/addpost',
         element : <AddPosts />
+    },
+    {
+        path : '/sobre',
+        element : <SobrePage/>
     }
 ])
 

@@ -1,6 +1,7 @@
 import './mainHeader.css'
 import userIcon from '../../images/svg/user.svg'
 import search from '../../images/svg/search.svg'
+import { Link } from "react-router-dom";
 
 function MainHeader() {
   return (
@@ -23,9 +24,9 @@ function MainHeader() {
             <li>
               <p>Carinho</p>
             </li>
-            <li>
-              <p>Sobre</p>
-            </li>
+            <Link to="/sobre" className="header-link">
+                <p>Sobre</p>
+              </Link>
             <li>
               <img src={userIcon} alt='user'></img>
             </li>

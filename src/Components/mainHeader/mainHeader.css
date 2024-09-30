@@ -23,6 +23,7 @@
     padding: 4rem;
     font-family: "Poppins", sans-serif;
     align-items: center;
+    
 }
 
 .main-header-logo{
@@ -60,6 +61,7 @@
 .main-header-items{
     display: flex;
     align-items: center;
+   
 }
 
 .main-header-items ul li img{
@@ -86,6 +88,21 @@
 }
 
 .main-header-items ul li:hover{
+    background-color: var(--color-two);
+    cursor: pointer;
+}
+
+
+.header-link {
+    text-decoration: none; 
+    color: white; 
+    padding: 0.8rem;
+    border-radius: 10px;
+    transition: 300ms ease-in-out;
+    font-size: 1rem;
+}
+
+.header-link:hover {
     background-color: var(--color-two);
     cursor: pointer;
 }

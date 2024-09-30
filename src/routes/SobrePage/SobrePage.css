@@ -1,0 +1,30 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 80%;
+    margin: 0 auto;
+    background-color: #f1e8e8;
+    border-radius: 10px;
+    justify-content: center; 
+    align-items: center;   
+    padding: 10px;
+    box-shadow: 10px 10px 0px 0px #afafaf;
+    -webkit-box-shadow: 10px 10px 0px 0px #afafaf;
+    -moz-box-shadow: 10px 10px 0px 0px #afafaf;
+}
+
+.text-container {
+    padding: 20px;
+    border: 2px solid black; 
+    border-radius: 10px; 
+    background-color: white; 
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+}
