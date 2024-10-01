@@ -2,13 +2,26 @@ import './mainHeader.css'
 import userIcon from '../../images/svg/user.svg'
 import search from '../../images/svg/search.svg'
 import { Link } from "react-router-dom";
+import { BrowserRouter as Router } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
+
 
 function MainHeader() {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate('/');
+  };
   return (
     <div className="header">
       <header className="main-header">
         <div className="main-header-logo">
-          <h1>Ecommerly</h1>
+        <div className='header-link'>
+        <h1 className='header-link2' onClick={handleLogoClick}
+        >Ecommerly</h1>
+        </div>
+    
         </div>
 
         <div className='main-header-search'>

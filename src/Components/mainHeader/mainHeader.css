@@ -101,6 +101,16 @@
     transition: 300ms ease-in-out;
     font-size: 1rem;
 }
+.header-link2 {
+    text-decoration: none; 
+    color: white; 
+    padding: 0.8rem;
+    border-radius: 10px;
+    transition: 300ms ease-in-out;
+    
+}
+
+
 
 .header-link:hover {
     background-color: var(--color-two);
