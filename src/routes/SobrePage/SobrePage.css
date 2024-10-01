@@ -1,6 +1,15 @@
 *{
     font-family: "Poppins", sans-serif;
 }
+:root {
+    --color-one: #E03B24;
+    --color-two: #E07D24;
+    --color-three: #E15D24;
+    --color-four: #E02444;
+    --color-five: #E09B24;
+    --color-six: #E0916F;
+}
+
 .content {
     display: flex;
     flex-wrap: wrap;
@@ -44,12 +53,12 @@
     width: 150px;
     height: 150px;
     border-radius: 100%;
-    border: 5px solid orange;
+    border: 5px solid var(--color-two);
     background-color: none;
 }
 .footer{
     width: 100%;
     height: 25px;
     margin-bottom: 0;
-    background-color: orange;
+    background-color: var(--color-two);
 }
