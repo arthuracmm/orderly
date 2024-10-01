@@ -30,7 +30,32 @@ desenvolvimento de competências essenciais no desenvolvimento de software,
 como a colaboração em equipe e o planejamento de projetos reais.
                 </p>
             </div>
+            
             </div>
+            <div className='title-2nd'>
+            <h1>EQUIPE DE PROGRAMADORES</h1>
+            </div>
+            <div className='programadores'>
+                <div className='programadores-itens'>
+
+                    
+                </div>
+                <div className='programadores-itens'>
+
+                    
+                </div>
+                <div className='programadores-itens'>
+
+                    
+                </div>
+                <div className='programadores-itens'>
+
+                    
+                </div>
+            </div>
+        </div>
+        <div className='footer'>
+            <p>.</p>
         </div>
         </div>
     );
