@@ -16,6 +16,8 @@ function Banner() {
         })
     }, [])
 
+    
+
     return(
         <div className="banner-main">
                    <img src={banner} alt="banner" className="bannerimg"/>

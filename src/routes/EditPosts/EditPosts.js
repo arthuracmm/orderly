@@ -20,6 +20,17 @@ function EditPosts(){
     image4 : ""
   })
 
+  const [category, setCategory] = useState([])
+  useEffect(() =>{
+        axios.get("http://localhost:5000/category")
+        .then((res) => {
+        setCategory(res.data)
+        })
+        .catch(() => {
+        console.log('Deu errado')
+        })
+    }, [])
+
   useEffect(() => {
     axios.get(`http://localhost:5000/produtos/${id}`)
       .then((response) => {
@@ -31,7 +42,8 @@ function EditPosts(){
           image1: response.data.image1,
           image2: response.data.image2,
           image3: response.data.image3,
-          image4: response.data.image4
+          image4: response.data.image4,
+          category: response.data.category,
         });
       })
       .catch((error) => {
@@ -48,7 +60,8 @@ function EditPosts(){
       image1 : data.image1,
       image2 : data.image2,
       image3 : data.image3,
-      image4 : data.image4
+      image4 : data.image4,
+      category: data.category 
     })
     .then(res => {
       console.log(res.data)
@@ -79,7 +92,7 @@ function EditPosts(){
       <div className="EditPosts"> 
         <button onClick={deletePost }>Delete</button>
         <button onClick={() => navigate(-1) }>Voltar</button>
-        <h1>Adicionar novo produto</h1>
+        <h1>Editar produto</h1>
         <form onSubmit={(e) => submit(e)}>
           <input onChange={(e) => handle(e)} id='title' value={data.title} placeholder='Título' type='text'/>
           <input onChange={(e) => handle(e)} id='description' value={data.description} placeholder='Descrição' type='text'/>
@@ -88,6 +101,13 @@ function EditPosts(){
           <input onChange={(e) => handle(e)} id='image3' value={data.image3} placeholder='Imagem 3' type='textarea'/>
           <input onChange={(e) => handle(e)} id='image4' value={data.image4} placeholder='Imagem 4' type='textarea'/>
           <input onChange={(e) => handle(e)} id='price' value={data.price} placeholder='Valor' type='text'/>
+          <select onChange={(e) => handle(e)} id='category' name="selectedFruit" value={data.category}>
+                {category.map((post) =>{
+                return (
+                    <option onChange={(e) => handle(e)} value={post.category}>{post.name}</option>
+                )
+                })}
+        </select>
           <input type='submit'/>
         </form>
       </div>

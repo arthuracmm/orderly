@@ -8,37 +8,41 @@
       "image2": " https://iili.io/dg9urN4.webp",
       "image3": " https://iili.io/dg9uPx2.jpg",
       "image4": "https://iili.io/dg9uiVS.jpg",
+      "category": "Fast Food",
       "id": "ad6b"
     },
     {
-      "id": "3969",
       "title": "Hamburger",
       "description": "aaaaaaa",
       "price": "29.99",
       "image1": "https://iili.io/dUyCKns.webp",
       "image2": " https://iili.io/dg9urN4.webp",
       "image3": " https://iili.io/dg9uPx2.jpg",
-      "image4": "https://iili.io/dg9uiVS.jpg"
+      "image4": "https://iili.io/dg9uiVS.jpg",
+      "category": "Fast Food",
+      "id": "3969"
     },
     {
-      "id": "2908",
       "title": "Hamburger",
       "description": "aaaaaaa",
       "price": "29.99",
       "image1": "https://iili.io/dUyCKns.webp",
       "image2": " https://iili.io/dg9urN4.webp",
       "image3": " https://iili.io/dg9uPx2.jpg",
-      "image4": "https://iili.io/dg9uiVS.jpg"
+      "image4": "https://iili.io/dg9uiVS.jpg",
+      "category": "Fast Food",
+      "id": "2908"
     },
     {
-      "id": "49d0",
       "title": "Hamburger",
       "description": "aaaaaaa",
       "price": "29.99",
       "image1": "https://iili.io/dUyCKns.webp",
       "image2": " https://iili.io/dg9urN4.webp",
       "image3": " https://iili.io/dg9uPx2.jpg",
-      "image4": "https://iili.io/dg9uiVS.jpg"
+      "image4": "https://iili.io/dg9uiVS.jpg",
+      "category": "Fast Food",
+      "id": "49d0"
     }
   ],
   "comments": [
@@ -58,14 +62,12 @@
       "id": "1",
       "name": "Doces",
       "image": "https://iili.io/dUyCKns.webp"
-
     },
     {
       "id": "2",
       "name": "Bebidas",
       "image": "https://iili.io/dUyCKns.webp"
-    }
-    ,
+    },
     {
       "id": "3",
       "name": "Massas",
@@ -90,4 +92,4 @@
   "profile": {
     "name": "typicode"
   }
-} 
+}
