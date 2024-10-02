@@ -1,0 +1,31 @@
+.banner-main {
+    justify-content: space-around;
+}
+
+.bannerimg{
+    object-fit: cover;
+
+}
+.category-banners{
+    position: absolute;
+    transform: translateY(-5.5rem);
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+    justify-content: space-around;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+.category img{
+    border-radius: 50%;
+    border: 5px solid var(--color-three);
+}

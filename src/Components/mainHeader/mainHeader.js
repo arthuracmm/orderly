@@ -2,7 +2,6 @@ import './mainHeader.css'
 import userIcon from '../../images/svg/user.svg'
 import search from '../../images/svg/search.svg'
 import { Link } from "react-router-dom";
-import { BrowserRouter as Router } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
 

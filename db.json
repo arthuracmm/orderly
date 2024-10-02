@@ -53,6 +53,40 @@
       "postId": "1"
     }
   ],
+  "category": [
+    {
+      "id": "1",
+      "name": "Doces",
+      "image": "https://iili.io/dUyCKns.webp"
+
+    },
+    {
+      "id": "2",
+      "name": "Bebidas",
+      "image": "https://iili.io/dUyCKns.webp"
+    }
+    ,
+    {
+      "id": "3",
+      "name": "Massas",
+      "image": "https://iili.io/dUyCKns.webp"
+    },
+    {
+      "id": "4",
+      "name": "Lanches",
+      "image": "https://iili.io/dUyCKns.webp"
+    },
+    {
+      "id": "5",
+      "name": "Vegetais",
+      "image": "https://iili.io/dUyCKns.webp"
+    },
+    {
+      "id": "6",
+      "name": "Fast Food",
+      "image": "https://iili.io/dUyCKns.webp"
+    }
+  ],
   "profile": {
     "name": "typicode"
   }
