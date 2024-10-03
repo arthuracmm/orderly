@@ -91,5 +91,28 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "cart": [
+    {
+      "id": "1234",
+      "id_user": "1",
+      "title": "Hamburger",
+      "price": "29.99",
+      "image1": "https://iili.io/dUyCKns.webp"
+    },
+    {
+      "id": "12342",
+      "id_user": "1",
+      "title": "Hamburger",
+      "price": "29.99",
+      "image1": "https://iili.io/dUyCKns.webp"
+    },
+    {
+      "id": "1234321",
+      "id_user": "3",
+      "title": "Hamburger",
+      "price": "29.99",
+      "image1": "https://iili.io/dUyCKns.webp"
+    }
+  ]
 }

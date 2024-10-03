@@ -6,6 +6,7 @@ import App from './routes/App/app';
 import EditPosts from './routes/EditPosts/EditPosts'
 import AddPosts from './routes/AddPosts/AddPosts';
 import SobrePage from './routes/SobrePage/SobrePage';
+import Cart from './routes/Cart/Cart'
 
 
 const router = createBrowserRouter([
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
     {
         path : '/sobre',
         element : <SobrePage/>
+    },
+    {
+        path : '/cart',
+        element : <Cart/>
     }
 ])
 

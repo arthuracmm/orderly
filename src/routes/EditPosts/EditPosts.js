@@ -6,6 +6,7 @@ import {useParams, useNavigate} from 'react-router-dom'
 function EditPosts(){
 
   const {id} = useParams()
+  console.log(id)
   const navigate = useNavigate();
   
 

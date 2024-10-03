@@ -88,12 +88,6 @@
     font-size: 1rem;
 }
 
-.main-header-items ul li:hover{
-    background-color: var(--color-two);
-    cursor: pointer;
-}
-
-
 .header-link {
     text-decoration: none; 
     color: white; 
@@ -110,8 +104,6 @@
     transition: 300ms ease-in-out;
     
 }
-
-
 
 .header-link:hover {
     background-color: var(--color-two);
