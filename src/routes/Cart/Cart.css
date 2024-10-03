@@ -1,0 +1,30 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+.cart-container {
+    display: flex;
+    background-color: #f1e8e8;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 50vh;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.cart-produto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    align-items: center; 
+    width: 300px;
+    height: 100%; 
+    margin: 10px; 
+    background-color: white;
+}
+
+.cart-produto img {
+    max-width: 100%; 
+    height: auto; 
+}

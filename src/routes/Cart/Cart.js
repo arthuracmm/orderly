@@ -1,6 +1,7 @@
 import './Cart.css';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import MainHeader from '../../Components/mainHeader/mainHeader.js';
 
 function Cart() {
     const id = "1"; //antes o valor da variavel estava em INT troquei pra string e o data filter começou a funcionar
@@ -22,14 +23,25 @@ function Cart() {
 
     return (
         <div>
+             <MainHeader />
             {filteredCart.map(item => ( 
+                <div className='cart-container'>
+                <div className='cart-items'>
+                <h1>carrinho 🛒</h1>
+                
+                <div className='cart-produto'>
                 <div key={item.id}>
                     <img src={item.image1} alt={item.title} />
                     <h1>{item.title}</h1>
                     <p>{item.price}</p>
                 </div>
+                
+                </div>
+                </div>
+                </div>
             ))}
         </div>
+        
     );
 }
 
