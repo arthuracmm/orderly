@@ -70,3 +70,20 @@
     cursor: pointer;
     background-color: var(--color-two);
 }
+
+.cart-delete{
+    display: flex;
+    position: absolute;
+    border: none;
+    right: 9.5%;
+    transform: translateY(-6rem);
+}
+
+.cart-delete img{
+    height: 30px;
+    border: none;
+}
+
+.cart-delete img:hover{
+    cursor: pointer;
+}

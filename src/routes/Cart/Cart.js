@@ -2,6 +2,7 @@ import './Cart.css';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import MainHeader from '../../Components/mainHeader/mainHeader.js';
+import trash from "../../images/svg/trash.svg"
 
 function Cart() {
     const id = "1";
@@ -18,12 +19,20 @@ function Cart() {
         const item = data.find(item => item.id === itemId);
         const newQuantity = Math.max(1, item.quantity + change);
 
-    axios.patch(`http://localhost:5000/cart/${itemId}`, { quantity: newQuantity }) // Usando PATCH
-        .then(() => {
-            setData(prev => prev.map(i => (i.id === itemId ? { ...i, quantity: newQuantity } : i)));
-        })
-        .catch(err => console.error('Erro ao atualizar:', err));
+        axios.patch(`http://localhost:5000/cart/${itemId}`, { quantity: newQuantity }) // Usando PATCH
+            .then(() => {
+                setData(prev => prev.map(i => (i.id === itemId ? { ...i, quantity: newQuantity } : i)));
+            })
+            .catch(err => console.error('Erro ao atualizar:', err));
     }
+
+    const deleteItem = (itemId) => {
+        axios.delete(`http://localhost:5000/cart/${itemId}`)
+            .then(() => {
+                setData(prev => prev.filter(item => item.id !== itemId));
+            })
+            .catch(err => console.error('Erro ao deletar:', err));
+    };
 
     const filteredCart = data.filter(item => item.id_user === id);
 
@@ -47,6 +56,10 @@ function Cart() {
                         </div>
                         <p className='cart-price'>{(item.price * item.quantity).toFixed(2)}</p>
                         <button className='cart-button-buy'>Comprar</button>
+                        <button className='cart-delete' onClick={() => deleteItem(item.id) }>
+                            <img src={trash}>
+                            </img>
+                        </button>
                     </div>
                 
             ))}
