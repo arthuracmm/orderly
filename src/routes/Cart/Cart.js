@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 function Cart() {
-    const id = 1;
+    const id = "1"; //antes o valor da variavel estava em INT troquei pra string e o data filter começou a funcionar
 
     const [data, setData] = useState([]);
 

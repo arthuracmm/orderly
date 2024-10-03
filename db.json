@@ -1,7 +1,7 @@
 {
   "produtos": [
     {
-      "title": "Hamburger",
+      "title": "HAMBURGU",
       "description": "aaaaaaa",
       "price": "29.99",
       "image1": "https://iili.io/dLkRnCF.jpg",
@@ -10,17 +10,6 @@
       "image4": "https://iili.io/dg9uiVS.jpg",
       "category": "Fast Food",
       "id": "ad6b"
-    },
-    {
-      "title": "Hamburger",
-      "description": "aaaaaaa",
-      "price": "29.99",
-      "image1": "https://iili.io/dUyCKns.webp",
-      "image2": " https://iili.io/dg9urN4.webp",
-      "image3": " https://iili.io/dg9uPx2.jpg",
-      "image4": "https://iili.io/dg9uiVS.jpg",
-      "category": "Fast Food",
-      "id": "3969"
     },
     {
       "title": "Hamburger",
@@ -102,7 +91,7 @@
     },
     {
       "id": "12342",
-      "id_user": "1",
+      "id_user": "12",
       "title": "Hamburger",
       "price": "29.99",
       "image1": "https://iili.io/dUyCKns.webp"
