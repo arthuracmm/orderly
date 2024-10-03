@@ -85,6 +85,7 @@
     {
       "id": "1234",
       "id_user": "1",
+      "quantity": 2,
       "title": "Hamburger",
       "price": "29.99",
       "image1": "https://iili.io/dUyCKns.webp"
@@ -92,6 +93,7 @@
     {
       "id": "12342",
       "id_user": "1",
+      "quantity": 5,
       "title": "Hamburger",
       "price": "29.99",
       "image1": "https://iili.io/dUyCKns.webp"
@@ -99,6 +101,7 @@
     {
       "id": "1234321",
       "id_user": "3",
+      "quantity": 1,
       "title": "Hamburger",
       "price": "29.99",
       "image1": "https://iili.io/dUyCKns.webp"
