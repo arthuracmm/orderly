@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import './AddPosts.css';
 import {useNavigate} from 'react-router-dom';
+import check from '../../images/svg/check.svg';
+import apagar from '../../images/svg/apagar.svg';
 
 function AddPosts(){
 
@@ -55,8 +57,8 @@ function handle(e){
 }
 
 return(
-  <div className='bodyEditPosts'>
-    <div className="EditPosts">
+  <div className='bodyAddPosts'>
+    <div className="AddPosts">
     <button onClick={() => navigate('/') }>Voltar</button>
       <h1>Adicionar novo produto</h1>
       <form onSubmit={(e) => submit(e)}>
@@ -68,14 +70,29 @@ return(
         <input onChange={(e) => handle(e)} id='image4' value={data.image4} placeholder='Imagem 4' type='textarea'/>
         <input onChange={(e) => handle(e)} id='price' value={data.price} placeholder='Valor' type='text'/>
         <select onChange={(e) => handle(e)} id='category' name="selectedFruit">
-                {category.map((post) =>{
+                {category.map((category) =>{
                 return (
-                    <option onChange={(e) => handle(e)} value={post.category}>{post.name}</option>
+                    <option onChange={(e) => handle(e)} value={category.category}>{category.name}</option>
                 )
                 })}
         </select>
         <input type='submit'/>
       </form>
+    </div>
+    <div className='EditPostsCategory'>
+        <h1>Categorias</h1>
+              {category.map((category) =>{
+                return (
+                  <div className='EditCategoryMap'>
+                    <input onChange={(e) => handle(e)} id='category' value={category.name} placeholder='Categoria' type='text'></input>
+                    <div className='EditCategoryMapButton'>
+                    <button><img src={check}/></button>
+                    <button><img src={apagar}/></button>
+                    </div>
+                  </div>
+                )
+              })}
+                
     </div>
   </div>
 )

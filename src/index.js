@@ -6,7 +6,8 @@ import App from './routes/App/app';
 import EditPosts from './routes/EditPosts/EditPosts'
 import AddPosts from './routes/AddPosts/AddPosts';
 import SobrePage from './routes/SobrePage/SobrePage';
-import Cart from './routes/Cart/Cart'
+import Cart from './routes/Cart/Cart';
+import MyProfile from './routes/MyProfile/MyProfile';
 
 
 const router = createBrowserRouter([
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
     {
         path : '/cart',
         element : <Cart/>
+    },
+    {
+        path : '/myprofile',
+        element : <MyProfile/>
     }
 ])
 

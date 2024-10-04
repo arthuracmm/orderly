@@ -1,7 +1,7 @@
 {
   "produtos": [
     {
-      "title": "HAMBURGU",
+      "title": "HAMBURGUe",
       "description": "aaaaaaa",
       "price": "29.99",
       "image1": "https://iili.io/dLkRnCF.jpg",
@@ -19,18 +19,7 @@
       "image2": " https://iili.io/dg9urN4.webp",
       "image3": " https://iili.io/dg9uPx2.jpg",
       "image4": "https://iili.io/dg9uiVS.jpg",
-      "category": "Fast Food",
-      "id": "2908"
-    },
-    {
-      "title": "Hamburger",
-      "description": "aaaaaaa",
-      "price": "29.99",
-      "image1": "https://iili.io/dUyCKns.webp",
-      "image2": " https://iili.io/dg9urN4.webp",
-      "image3": " https://iili.io/dg9uPx2.jpg",
-      "image4": "https://iili.io/dg9uiVS.jpg",
-      "category": "Fast Food",
+      "category": "Lanches",
       "id": "49d0"
     }
   ],
@@ -50,48 +39,47 @@
     {
       "id": "1",
       "name": "Doces",
-      "image": "https://iili.io/dUyCKns.webp"
+      "image": "https://iili.io/dbVJctn.webp"
     },
     {
       "id": "2",
       "name": "Bebidas",
-      "image": "https://iili.io/dUyCKns.webp"
+      "image": "https://iili.io/dbVd5fj.jpg"
     },
     {
       "id": "3",
       "name": "Massas",
-      "image": "https://iili.io/dUyCKns.webp"
+      "image": "https://iili.io/dbV3d6G.jpg"
     },
     {
       "id": "4",
       "name": "Lanches",
-      "image": "https://iili.io/dUyCKns.webp"
+      "image": "https://iili.io/dbVACCv.png"
     },
     {
       "id": "5",
       "name": "Vegetais",
-      "image": "https://iili.io/dUyCKns.webp"
+      "image": "https://iili.io/dbVB7QS.jpg"
     },
     {
       "id": "6",
       "name": "Fast Food",
-      "image": "https://iili.io/dUyCKns.webp"
+      "image": "https://iili.io/dbVxyJe.png"
     }
   ],
-  "profile": {
-    "name": "typicode"
+  "users": {
+    "id": "1",
+    "username": "arthuracm",
+    "name": "Arthur Cesar Sousa Marcelino",
+    "email": "arthurcesarmarcelino@gmail.com",
+    "tel": "16999999999",
+    "cpf": "99999999999",
+    "adress": "Av. Pedro Calandria Fernandes",
+    "password": "1234"
   },
   "cart": [
     {
-      "id": "1234",
-      "id_user": "1",
-      "quantity": 1,
-      "title": "Hamburger",
-      "price": "29.99",
-      "image1": "https://iili.io/dUyCKns.webp"
-    },
-    {
-      "id": "12342",
+      "id": "21",
       "id_user": "1",
       "quantity": 3,
       "title": "Hamburger",
@@ -99,7 +87,7 @@
       "image1": "https://iili.io/dUyCKns.webp"
     },
     {
-      "id": "1234321",
+      "id": "2",
       "id_user": "3",
       "quantity": 1,
       "title": "Hamburger",
