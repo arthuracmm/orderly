@@ -1,17 +1,6 @@
 {
   "produtos": [
     {
-      "title": "HAMBURGUe",
-      "description": "aaaaaaa",
-      "price": "29.99",
-      "image1": "https://iili.io/dLkRnCF.jpg",
-      "image2": " https://iili.io/dg9urN4.webp",
-      "image3": " https://iili.io/dg9uPx2.jpg",
-      "image4": "https://iili.io/dg9uiVS.jpg",
-      "category": "Fast Food",
-      "id": "ad6b"
-    },
-    {
       "title": "Hamburger",
       "description": "aaaaaaa",
       "price": "29.99",
@@ -21,6 +10,28 @@
       "image4": "https://iili.io/dg9uiVS.jpg",
       "category": "Lanches",
       "id": "49d0"
+    },
+    {
+      "id": "e82f",
+      "title": "Mostarda",
+      "description": "aaaaaaa",
+      "price": "49.99",
+      "image1": "https://iili.io/dg9urN4.webp",
+      "image2": "https://iili.io/dUyCKns.webp",
+      "image3": "https://iili.io/dg9uPx2.jpg",
+      "image4": "https://iili.io/dg9uiVS.jpg",
+      "category": "Bebidas"
+    },
+    {
+      "title": "Maionese",
+      "description": "aaaaaaa",
+      "price": "59.99",
+      "image1": "https://iili.io/dg9uPx2.jpg",
+      "image2": "https://iili.io/dg9urN4.webp",
+      "image3": "https://iili.io/dUyCKns.webp",
+      "image4": "https://iili.io/dg9uiVS.jpg",
+      "category": "",
+      "id": "69f6"
     }
   ],
   "comments": [
@@ -69,6 +80,7 @@
   ],
   "users": {
     "id": "1",
+    "image": "https://iili.io/dbiTDJ4.jpg",
     "username": "arthuracm",
     "name": "Arthur Cesar Sousa Marcelino",
     "email": "arthurcesarmarcelino@gmail.com",

@@ -2,9 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Altura total da viewport */
+    height: 100vh;
     margin: 0;
-    gap: 3rem; /* Remove a margem padrão */
+    gap: 3rem;
 }
 .AddPosts{
     display: flex;

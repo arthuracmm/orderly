@@ -43,7 +43,9 @@ function MainHeader() {
                 <p>Sobre</p>
             </Link>
             <li>
+            <Link to="/myprofile" className="header-link">
               <img src={userIcon} alt='user'></img>
+            </Link>
             </li>
           </ul>
         </div>
