@@ -2,8 +2,10 @@ import React, {useState, useEffect} from "react";
 import "./newPosts.css"
 import axios from "axios"
 import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 function NewPosts() {
+    const navigate = useNavigate();
 
     const [posts, setPosts] = useState([])
     useEffect(() =>{
@@ -38,7 +40,7 @@ function NewPosts() {
                                 <p className="post-price">R$ {Number(post.price).toFixed(2)}</p>
 
                                 <div className="btns">
-                                <button className="post-btn">Ver Mais</button>
+                                <button className="post-btn" onClick={() => navigate(`/produtos/${post.id}`)}>Ver Mais</button>
                                 <button className="post-btn">Comprar</button>
                                 <Link to={{pathname: `/edit/${post.id}`}}>
                                 <button className="post-btn edit-post">Edit</button>

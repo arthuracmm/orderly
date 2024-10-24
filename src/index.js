@@ -8,6 +8,7 @@ import AddPosts from './routes/AddPosts/AddPosts';
 import SobrePage from './routes/SobrePage/SobrePage';
 import Cart from './routes/Cart/Cart';
 import MyProfile from './routes/MyProfile/MyProfile';
+import ProductDetails from './routes/ProductDetails/ProductDetails'
 
 
 const router = createBrowserRouter([
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
         element : <EditPosts />
     },
     {
-    path : '/addpost',
+        path : '/addpost',
         element : <AddPosts />
     },
     {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
     {
         path : '/myprofile',
         element : <MyProfile/>
+    },
+    {
+        path : '/produtos/:id',
+        element : <ProductDetails/>
     }
 ])
 

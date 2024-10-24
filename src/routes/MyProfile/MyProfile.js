@@ -4,7 +4,6 @@ import axios from 'axios';
 import MainHeader from '../../Components/mainHeader/mainHeader.js';
 
 function MyProfile() {
-    const id = "1";
 
     const [data, setData] = useState([]);
     useEffect(() =>{
