@@ -25,8 +25,14 @@
         setIsVisible(true);
     };
 
-    const handleBlur = () => {
-        setIsVisible(false);
+    const handleBlur = (event) => {
+      // Adiciona um pequeno atraso para o clique no item
+      setTimeout(() => {
+          if (event.relatedTarget && event.relatedTarget.closest('#minhaDiv')) {
+              return; // Não faz nada se o clique foi dentro da div
+          }
+          setIsVisible(false);
+      }, 100); // Ajuste o tempo conforme necessário
     };
 
     useEffect(() => {
