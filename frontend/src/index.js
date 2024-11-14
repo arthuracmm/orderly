@@ -9,6 +9,7 @@ import SobrePage from './routes/SobrePage/SobrePage';
 import Cart from './routes/Cart/Cart';
 import MyProfile from './routes/MyProfile/MyProfile';
 import ProductDetails from './routes/ProductDetails/ProductDetails'
+import Login from './routes/Login/login'
 
 
 const router = createBrowserRouter([
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
     {
         path : '/produtos/:id',
         element : <ProductDetails/>
+    },
+    {
+        path : '/login',
+        element : <Login/>
     }
 ])
 
