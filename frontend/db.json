@@ -133,7 +133,7 @@
       "id": "e82f"
     },
     {
-      "title": "Pizza1",
+      "title": "Pizza do gui",
       "description": "Pizza do gabriel de peperone",
       "price": "40",
       "image1": "https://img.freepik.com/premium-photo/delicious-pepperoni-pizza-png-style-white-background_1115207-8912.jpg",
@@ -142,6 +142,17 @@
       "image4": "https://img.freepik.com/premium-photo/delicious-pepperoni-pizza-png-style-white-background_1115207-8912.jpg",
       "category": "Massas",
       "id": "a5fb"
+    },
+    {
+      "id": "6066",
+      "title": "Pastel de Frango",
+      "description": "Pastel de frango grandao",
+      "price": "15",
+      "image1": "https://png.pngtree.com/png-vector/20240124/ourlarge/pngtree-brazilian-snacks-chicken-pastry-with-cheese-png-image_11483608.png",
+      "image2": "https://png.pngtree.com/png-vector/20240124/ourlarge/pngtree-brazilian-snacks-chicken-pastry-with-cheese-png-image_11483608.png",
+      "image3": "https://png.pngtree.com/png-vector/20240124/ourlarge/pngtree-brazilian-snacks-chicken-pastry-with-cheese-png-image_11483608.png",
+      "image4": "https://png.pngtree.com/png-vector/20240124/ourlarge/pngtree-brazilian-snacks-chicken-pastry-with-cheese-png-image_11483608.png",
+      "category": "Massas"
     }
   ],
   "comments": [

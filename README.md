@@ -93,8 +93,8 @@ Certifique-se de ter os seguintes softwares instalados em sua máquina:
 ## 👤 Entrando como Administrador
 
 1. Abra a pagina de login clicando no icone de usuario no cabeçalho.
-2. Por padrão o site abre como administrador, se quiser abrir a pagina de edição use `http://localhost/3000/admin`.
-3. Use o email `admin@ex.com.br` e a senha `admin`.
+2. Por padrão o site abre como um usuario teste
+3. Use o email `admin@ex.com.br` e a senha `admin` para logar como adm.
 4. Agora você pode criar, editar e deletar produtos e categorias.
 
 ---
