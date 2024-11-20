@@ -147,9 +147,9 @@
   ],
   "category": [
     {
-      "id": "1",
       "name": "Doces",
-      "image": "https://iili.io/dbVJctn.webp"
+      "image": "https://i.pinimg.com/originals/34/6f/06/346f064b0e78c3025acced62039a3417.png",
+      "id": "1"
     },
     {
       "id": "2",
@@ -190,16 +190,24 @@
   },
   "cart": [
     {
-      "id": "21",
-      "id_user": "1",
-      "quantity": 3,
+      "id": "2",
+      "id_user": "3",
+      "quantity": 1,
       "title": "Hamburger",
       "price": "29.99",
       "image1": "https://iili.io/dUyCKns.webp"
     },
     {
-      "id": "2",
-      "id_user": "3",
+      "id": "69f6",
+      "id_user": "1",
+      "quantity": 1,
+      "title": "Maionese",
+      "price": "59.99",
+      "image1": "https://iili.io/dg9uPx2.jpg"
+    },
+    {
+      "id": "49d0",
+      "id_user": "1",
       "quantity": 1,
       "title": "Hamburger",
       "price": "29.99",

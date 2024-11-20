@@ -72,9 +72,10 @@
 }
 
 .EditCategoryMap input{
-    width: 220px;
+    width: 150px;
     padding: 10px;
     box-sizing: border-box;
+    
 }
 
 .EditCategoryMap button{

@@ -39,7 +39,7 @@ function Login() {
           if (res.status === 200) {
             if (res.data.role === "admin") {
               alert('Login bem-sucedido como administrador!');
-              navigate('/addpost'); // Redireciona para a página de administrador
+              navigate('/admin'); // Redireciona para a página de administrador
             } else if (res.data.role === "user") {
               alert('Login bem-sucedido como usuário!');
               navigate('/'); // Redireciona para a página de usuário comum

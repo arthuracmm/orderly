@@ -13,6 +13,11 @@
           </Link>
           </div>
           </div>
+          <Link to="/addpost" >
+          <button className='header-link3'>
+            Adicionar produtos
+          </button>
+          </Link>
         </header>
       </div>
     );
