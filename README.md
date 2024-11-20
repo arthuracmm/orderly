@@ -1,4 +1,16 @@
-# Meu Projeto React Native com Node.js e XAMPP (phpMyAdmin)
+# PLATAFORMA DE COMÉRCIO ELETRÔNICO - ECOMMERLY
+
+Bem-vindo ao repositório do projeto Ecommerly! Este é um sistema para compras online. Ele oferece uma experiência amigável e robusta tanto para os usuários quanto para os administradores.
+
+## Descrição do site
+
+O Ecommerly é uma plataforma de e-commerce desenvolvida para facilitar a comercialização de produtos variados, como eletrônicos, roupas, acessórios e muito mais. A plataforma oferece uma solução completa para pequenos e médios empresários, permitindo que eles cadastrem seus produtos de forma intuitiva e eficiente.
+
+## Objetivo do site
+
+O objetivo do Ecommerly é proporcionar uma ferramenta simples e acessível para micro e pequenos empreendedores ingressarem no ambiente digital, expandindo suas operações e alcançando um público maior. A plataforma foi desenvolvida no contexto do curso de Desenvolvimento de Software Multiplataforma da FATEC, aplicando os conhecimentos obtidos em tecnologias modernas como HTML, CSS, JavaScript, Node.js e MySQL.  A plataforma deve incluir funcionalidades essenciais como cadastro de produtos, oferecendo uma solução completa para o dia a dia dos microempreendedores. A ideia é proporcionar aos usuários uma experiência fluida e descomplicada, independentemente do seu nível de conhecimento em tecnologia.
+
+## Projeto React Native com Node.js e XAMPP (phpMyAdmin)
 
 Este projeto utiliza **React Native** para o front-end, **Node.js** como back-end e **phpMyAdmin (MySQL)** para o banco de dados. O objetivo deste README é fornecer instruções claras para configurar e rodar o projeto localmente.
 
@@ -28,7 +40,7 @@ Certifique-se de ter os seguintes softwares instalados em sua máquina:
    - Abra o navegador e vá para `http://localhost/phpmyadmin`.
 
 3. Crie um novo banco de dados:
-   - Nomeie o banco de dados, por exemplo, `databasedb`.
+   - Nomeie o banco de dados, por exemplo, `orderlydb`.
    - Importe ou configure as tabelas usando esse arquivo: [orderlydb.sql](./frontend/src/sql/orderlydb.sql)
 
 ### 2. Back-End (Node.js)
@@ -43,7 +55,7 @@ Certifique-se de ter os seguintes softwares instalados em sua máquina:
    ```
 
 3. Configure o arquivo `server.js`:
-   - Crie um arquivo `server.js` na raiz do back-end com as seguintes variáveis:
+   - Confira o arquivo `server.js` na raiz do back-end com as seguintes variáveis:
      ```env
      host: "localhost",
      user: "root",
@@ -97,6 +109,11 @@ Certifique-se de ter os seguintes softwares instalados em sua máquina:
 3. Use o email `admin@ex.com.br` e a senha `admin` para logar como adm.
 4. Agora você pode criar, editar e deletar produtos e categorias.
 
+## 📍 Rotas 
+   /addpost
+   /admin
+   /login
+
 ---
 
 ## 📂 Estrutura do Projeto
@@ -115,6 +132,13 @@ orderlydb/
 ```
 
 ---
+
+## 🤝 Equipe por trás do projeto Ecommerly
+
+- ARTHUR CESAR SOUSA MARCELINO
+- HUGO DE CASTRO RODRIGUES
+- PABLO MIGUEL SOUSA NOBREGA
+- VITOR SIQUEIRA SIMEAO
 
 ## 📚 Referências e Links Úteis
 
