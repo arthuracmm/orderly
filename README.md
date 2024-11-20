@@ -28,7 +28,7 @@ Certifique-se de ter os seguintes softwares instalados em sua máquina:
    - Abra o navegador e vá para `http://localhost/phpmyadmin`.
 
 3. Crie um novo banco de dados:
-   - Nomeie o banco de dados, por exemplo, `databasedb`.
+   - Nomeie o banco de dados, por exemplo, `orderlydb`.
    - Importe ou configure as tabelas usando esse arquivo: [orderlydb.sql](./frontend/src/sql/orderlydb.sql)
 
 ### 2. Back-End (Node.js)
@@ -43,7 +43,7 @@ Certifique-se de ter os seguintes softwares instalados em sua máquina:
    ```
 
 3. Configure o arquivo `server.js`:
-   - Crie um arquivo `server.js` na raiz do back-end com as seguintes variáveis:
+   - Confira o arquivo `server.js` na raiz do back-end com as seguintes variáveis:
      ```env
      host: "localhost",
      user: "root",
