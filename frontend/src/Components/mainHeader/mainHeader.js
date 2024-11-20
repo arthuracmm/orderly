@@ -84,9 +84,7 @@
 
           <div className="main-header-items">
             <ul>
-              <li>
-                <p>Produtos</p>
-              </li>
+             
               <li>
               <Link to="/cart" className="header-link">
                 <p>Carinho</p>

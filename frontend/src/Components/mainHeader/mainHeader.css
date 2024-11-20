@@ -51,6 +51,7 @@
     padding-left: 3rem;
     font-size: 18px;
     transition: 100ms ease-in-out;
+    
 }
 
 .header-search-input:focus{
@@ -113,13 +114,14 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    z-index: 0;
+    z-index: 10;
     top: 5.5rem;
     width: 40rem;
     box-sizing: border-box;
     background-color: var(--color-six);
     border-radius: 1rem;
     overflow: hidden;
+    
 }
 
 .searchMap:hover{

@@ -4,18 +4,21 @@ import axios from 'axios';
 import MainHeader from '../../Components/mainHeader/mainHeader.js';
 
 function MyProfile() {
+    const [data, setData] = useState({});
+    const userId = localStorage.getItem('userId'); // Recupera o ID do usuário logado
 
-    const [data, setData] = useState([]);
-    useEffect(() =>{
-        axios.get("http://localhost:5000/users")
-        .then((res) => {
-        setData(res.data)
-        console.log(res.data)
-        })
-        .catch(() => {
-        console.log('Deu errado')
-        })
-    }, [])
+    useEffect(() => {
+        if (userId) {
+            axios
+                .get(`http://localhost:8081/users/${userId}`) // Pega os dados do usuário
+                .then((res) => {
+                    setData(res.data);
+                })
+                .catch((err) => {
+                    console.error('Erro ao buscar os dados do usuário:', err);
+                });
+        }
+    }, [userId]);
 
     return (
         <div>
@@ -24,38 +27,30 @@ function MyProfile() {
                 <div className='MainProfile'>
                     <h1>Minha Conta</h1>
                     <div className='MainProfileItens'>
-                    
-                        <div className='ProfileImage'>
-                            <img src={data.image} alt={data.name} />
-                            <button>Alterar</button>
-                        </div>
+                       
                         <div className='ProfileInputs'>
+                           
                             <label>
-                            Username
-                            <input value={data.username}></input>
+                                Nome Completo
+                                <input value={data.nome || ''} readOnly />
                             </label>
                             <label>
-                            Nome Completo
-                            <input value={data.name}></input>
+                                Email
+                                <input value={data.email || ''} readOnly />
                             </label>
                             <label>
-                            Email
-                            <input value={data.email}></input>
+                                Telefone
+                                <input value={data.telefone || ''} readOnly />
                             </label>
                             <label>
-                            Telefone
-                            <input value={data.tel}></input>
+                                Endereço
+                                <input value={data.endereco || ''} readOnly />
                             </label>
                             <label>
-                            Endereço
-                            <input value={data.adress}></input>
-                            </label>
-                            <label>
-                            CPF
-                            <input value={data.cpf}></input>
+                                CPF
+                                <input value={data.cpf || ''} readOnly />
                             </label>
                         </div>
-                        
                     </div>
                 </div>
             </div>

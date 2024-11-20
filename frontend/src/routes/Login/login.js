@@ -37,6 +37,8 @@ function Login() {
       axios.post('http://localhost:8081/login', { email, password })
         .then(res => {
           if (res.status === 200) {
+            localStorage.setItem('userId', res.data.userId); // Armazena o ID do usuário
+            localStorage.setItem('role', res.data.role); // Armazena o papel do usuário (admin ou user)
             if (res.data.role === "admin") {
               alert('Login bem-sucedido como administrador!');
               navigate('/admin'); // Redireciona para a página de administrador

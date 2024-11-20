@@ -20,17 +20,30 @@ app.post('/login', (req, res) => {
         
         if (data.length > 0) {
             const user = data[0];
-            // Verifica se o usuário é administrador
-            if (user.admin) {
-                return res.status(200).json({ message: "Login Bem Sucedido", role: "admin" });
-            } else {
-                return res.status(200).json({ message: "Login Bem Sucedido", role: "user" });
-            }
+            return res.status(200).json({
+                message: "Login Bem Sucedido",
+                role: user.admin ? "admin" : "user",
+                userId: user.id, // Inclua o ID do usuário
+            });
         } else {
             return res.status(401).json({ message: "Não Existe" });
         }
     });
 });
+
+app.get('/users/:id', (req, res) => {
+    const sql = "SELECT * FROM login WHERE id = ?";
+    db.query(sql, [req.params.id], (err, data) => {
+        if (err) return res.status(500).json({ message: "Error connecting to the database" });
+        
+        if (data.length > 0) {
+            return res.status(200).json(data[0]); // Retorna o usuário
+        } else {
+            return res.status(404).json({ message: "Usuário não encontrado" });
+        }
+    });
+});
+
 app.post('/register', (req, res) => {
     const { name, email, password, cpf, cep, telefone, endereco } = req.body;
   

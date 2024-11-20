@@ -196,22 +196,6 @@
       "title": "Hamburger",
       "price": "29.99",
       "image1": "https://iili.io/dUyCKns.webp"
-    },
-    {
-      "id": "69f6",
-      "id_user": "1",
-      "quantity": 1,
-      "title": "Maionese",
-      "price": "59.99",
-      "image1": "https://iili.io/dg9uPx2.jpg"
-    },
-    {
-      "id": "49d0",
-      "id_user": "1",
-      "quantity": 1,
-      "title": "Hamburger",
-      "price": "29.99",
-      "image1": "https://iili.io/dUyCKns.webp"
     }
   ]
 }
