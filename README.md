@@ -97,6 +97,11 @@ Certifique-se de ter os seguintes softwares instalados em sua máquina:
 3. Use o email `admin@ex.com.br` e a senha `admin` para logar como adm.
 4. Agora você pode criar, editar e deletar produtos e categorias.
 
+## 📍 Rotas 
+   /addpost
+   /admin
+   /login
+
 ---
 
 ## 📂 Estrutura do Projeto
