@@ -31,6 +31,19 @@ app.post('/login', (req, res) => {
         }
     });
 });
+app.post('/register', (req, res) => {
+    const { name, email, password, cpf, cep, telefone, endereco } = req.body;
+  
+    const sql = "INSERT INTO login (nome, email, password, cpf, cep, telefone, endereco, admin) VALUES (?, ?, ?, ?, ?, ?, ?, false)";
+    db.query(sql, [name, email, password, cpf, cep, telefone, endereco], (err, result) => {
+        if (err) {
+            console.error(err); // Adicione isso para depurar erros
+            return res.status(500).json({ message: "Erro ao cadastrar usuário" });
+        }
+        return res.status(200).json({ message: "Usuário cadastrado com sucesso" });
+    });
+});
+
 
 
 
