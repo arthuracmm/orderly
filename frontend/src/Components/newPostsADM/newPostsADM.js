@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from "react";
-import "./newPosts.css"
+import "./newPostsADM.css"
 import axios from "axios"
+import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 
-function NewPosts() {
+function NewPostsADM() {
     const navigate = useNavigate();
 
     const [posts, setPosts] = useState([])
@@ -17,9 +18,7 @@ function NewPosts() {
         })
     }, [])
     return(
-        <div className="newpost-main">
-            <h1 className="newpost-h1">Novidades</h1>
-            <div className="line"/>
+        <div className="newpost-main-adm">
             <div className="cards">
                     {posts.map((post) =>{
                         return (
@@ -38,9 +37,10 @@ function NewPosts() {
                                 
                                 <p className="post-price">R$ {Number(post.price).toFixed(2)}</p>
 
-                                <div className="btns">
-                                <button className="post-btn" onClick={() => navigate(`/produtos/${post.id}`)}>Ver Mais</button>
-                                <button className="post-btn">Comprar</button>
+                                <div className="btns-adm">
+                                <Link to={{pathname: `/edit/${post.id}`}}>
+                                <button className="post-btn edit-post">Edit</button>
+                                </Link>
                                 </div>
                             </div>
                         )
@@ -52,4 +52,4 @@ function NewPosts() {
     );
 }
 
-export default NewPosts;
+export default NewPostsADM;

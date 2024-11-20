@@ -14,7 +14,7 @@
     border: 1px solid #d8d8d8;
     gap: 1rem;
     width: 400px;
-    height: 400px;
+    height: 600px;
     padding: 3rem;
     border-radius: 20px;
 }
@@ -33,10 +33,29 @@
 
 .EditPosts form input:last-child{
     width: 6rem;
+    height: 40px;
     background-color: var(--color-three);
     color: white;
     border-radius: 10px;
     transition: 150ms ease-in-out;
+    border: 1px solid #000;
+}
+
+.EditPosts-Btns-Content{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.EditPosts-Btns{
+    width: 6rem;
+    height: 40px;
+    background-color: var(--color-three);
+    color: white;
+    border-radius: 10px;
+    transition: 150ms ease-in-out;
+    border: 1px solid #000;
+    cursor: pointer;
 }
 
 .EditPosts form input:last-child:hover{

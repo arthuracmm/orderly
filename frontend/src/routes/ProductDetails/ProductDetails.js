@@ -27,7 +27,6 @@ function ProductDetails() {
   return (
     <div>
       <MainHeader />
-      <button onClick={() => navigate('/')} >Voltar</button>
       <div className='productDetails'>
         <img src={product.image1} alt={product.title} className='firstImage'/>
         <div className='secondImages'>

@@ -90,9 +90,11 @@ function EditPosts(){
 
   return(
     <div className='bodyEditPosts'>
-      <div className="EditPosts"> 
-        <button onClick={deletePost }>Delete</button>
-        <button onClick={() => navigate(-1) }>Voltar</button>
+      <div className="EditPosts">
+        <div className='EditPosts-Btns-Content'>
+          <button onClick={() => navigate(-1) } className='EditPosts-Btns'>Voltar</button>
+          <button onClick={deletePost } className='EditPosts-Btns'>Delete</button>
+        </div>
         <h1>Editar produto</h1>
         <form onSubmit={(e) => submit(e)}>
           <input onChange={(e) => handle(e)} id='title' value={data.title} placeholder='Título' type='text'/>

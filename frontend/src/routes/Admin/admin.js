@@ -1,8 +1,7 @@
 import React from 'react';
 import './admin.css'
-import MainHeader from "../../Components/mainHeader/mainHeader";
-import NewPosts from "../../Components/newPosts/newPosts";
-import Banner from '../../Components/banner/banner';
+import NewPostsADM from '../../Components/newPostsADM/newPostsADM';
+import MainHeaderADM from '../../Components/mainHeaderADM/mainHeaderADM';
 
 
 
@@ -10,10 +9,9 @@ function Admin() {
 
   return (
     <div>
-      <MainHeader />
-
+      <MainHeaderADM/>
       <main>
-          <NewPosts/>
+          <NewPostsADM/>
       </main>
     </div>
   );
