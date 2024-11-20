@@ -10,7 +10,7 @@ import Cart from './routes/Cart/Cart';
 import MyProfile from './routes/MyProfile/MyProfile';
 import ProductDetails from './routes/ProductDetails/ProductDetails'
 import Login from './routes/Login/login';
-import Admin from  './routes/Admin/admin';
+import Admin from './routes/Admin/admin';
 
 
 const router = createBrowserRouter([
@@ -46,6 +46,7 @@ const router = createBrowserRouter([
         path : '/admin',
         element : <Admin/>
     },
+
     {
         path : '/login',
         element : <Login/>

@@ -99,7 +99,7 @@ function Login() {
           <button>{isRegistering ? 'Cadastrar' : 'Login'}</button>
           <p>
             {isRegistering ? 'Já tem uma conta? ' : 'Não tem uma conta? '}
-            <span onClick={() => setIsRegistering(!isRegistering)} className="toggle-link">
+            <span  onClick={() => setIsRegistering(!isRegistering)} className='cadastrar'>
               {isRegistering ? 'Login' : 'Cadastrar'}
             </span>
           </p>

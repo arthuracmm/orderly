@@ -21,7 +21,7 @@
     border: 1px solid #d8d8d8;
     gap: 1rem;
     width: 400px;
-    height: 450px;
+    height: auto;
     padding: 3rem;
     border-radius: 20px;
 }
@@ -49,5 +49,10 @@
 
 .login-inputs button:hover{
     background-color: var(--color-two);
+}
+.cadastrar{
+    color: var(--color-one);
+    text-decoration: underline;
+    cursor:pointer;
 }
 
