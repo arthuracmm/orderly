@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# Meu Projeto React Native com Node.js e XAMPP (phpMyAdmin)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto utiliza **React Native** para o front-end, **Node.js** como back-end e **phpMyAdmin (MySQL)** para o banco de dados. O objetivo deste README é fornecer instruções claras para configurar e rodar o projeto localmente.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🛠 Pré-requisitos
 
-### `npm start`
+Certifique-se de ter os seguintes softwares instalados em sua máquina:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Node.js** (v16 ou superior) - [Baixar Node.js](https://nodejs.org/)
+2. **React Native CLI** (opcional caso prefira o Expo) - [Guia de instalação](https://reactnative.dev/docs/environment-setup)
+3. **XAMPP** (com phpMyAdmin para gerenciar MySQL) - [Baixar XAMPP](https://www.apachefriends.org/)
+5. **Git** (opcional) - [Baixar Git](https://git-scm.com/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ⚙️ Configuração do Ambiente
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Banco de Dados com XAMPP
+1. Abra o **XAMPP Control Panel** e inicie os serviços:
+   - **Apache**
+   - **MySQL**
 
-### `npm run build`
+   ![alt text](./frontend/src/images/xamp.jpeg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Acesse o phpMyAdmin:
+   - Abra o navegador e vá para `http://localhost/phpmyadmin`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Crie um novo banco de dados:
+   - Nomeie o banco de dados, por exemplo, `databasedb`.
+   - Importe ou configure as tabelas usando esse arquivo: [orderlydb.sql](./frontend/src/sql/orderlydb.sql)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. Back-End (Node.js)
+1. Navegue até a pasta do projeto:
+   ```bash
+   cd backend
+   ```
 
-### `npm run eject`
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Configure o arquivo `server.js`:
+   - Crie um arquivo `server.js` na raiz do back-end com as seguintes variáveis:
+     ```env
+     host: "localhost",
+     user: "root",
+     password: "",
+     database: "orderlydb"
+     ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Inicie o servidor:
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Pronto! Seu banco de login esta funcionando!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+### 3. Front-End (React Native)
+1. Navegue até a pasta do projeto:
+   ```bash
+   cd frontend
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+3. Abra um terminal no VSCODE e inicie o site usando:
+   ```bash
+   cd frontend
+   npm start
+   ```
+4. Abra outro terminal e inicie a nossa API local usando:
+   ```bash
+   cd frontend
+   npm run server
+   ```
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🧪 Testando o Projeto
 
-### Code Splitting
+1. Certifique-se de que o back-end e o XAMPP estão rodando.
+2. Abra o site com navegador `http://localhost/3000`.
+3. Realize interações no app e verifique se os dados estão sendo salvos ou carregados corretamente no banco de dados MySQL.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 👤 Entrando como Administrador
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Abra a pagina de login clicando no icone de usuario no cabeçalho.
+2. Por padrão o site abre como administrador, se quiser abrir a pagina de edição use `http://localhost/3000/admin`.
+3. Use o email `admin@ex.com.br` e a senha `admin`.
+4. Agora você pode criar, editar e deletar produtos e categorias.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📂 Estrutura do Projeto
 
-### Advanced Configuration
+```plaintext
+orderlydb/
+├── backend/
+│   └── server.js          # Arquivo principal do servidor Node.js
+├── frontend/
+│   ├── src/
+│   │   ├── components/    # Componentes React Native
+│   │   ├── routes/        # Rotas do aplicativo
+│   │   └── index.js       # Arquivo principal
+│   └── package.json       # Dependências do front-end
+└── README.md              # Este arquivo
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📚 Referências e Links Úteis
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [React Native Documentation](https://reactnative.dev/docs/getting-started)
+- [Node.js Documentation](https://nodejs.org/en/docs/)
+- [XAMPP Documentation](https://www.apachefriends.org/docs.html)
+- [phpMyAdmin Documentation](https://docs.phpmyadmin.net/)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---

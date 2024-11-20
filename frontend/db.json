@@ -131,6 +131,17 @@
       "image4": "https://iili.io/dg9uiVS.jpg",
       "category": "Bebidas",
       "id": "e82f"
+    },
+    {
+      "title": "Pizza1",
+      "description": "Pizza do gabriel de peperone",
+      "price": "40",
+      "image1": "https://img.freepik.com/premium-photo/delicious-pepperoni-pizza-png-style-white-background_1115207-8912.jpg",
+      "image2": "https://img.freepik.com/premium-photo/delicious-pepperoni-pizza-png-style-white-background_1115207-8912.jpg",
+      "image3": "https://img.freepik.com/premium-photo/delicious-pepperoni-pizza-png-style-white-background_1115207-8912.jpg",
+      "image4": "https://img.freepik.com/premium-photo/delicious-pepperoni-pizza-png-style-white-background_1115207-8912.jpg",
+      "category": "Massas",
+      "id": "a5fb"
     }
   ],
   "comments": [
@@ -148,7 +159,7 @@
   "category": [
     {
       "name": "Doces",
-      "image": "https://i.pinimg.com/originals/34/6f/06/346f064b0e78c3025acced62039a3417.png",
+      "image": "https://png.pngtree.com/png-vector/20240116/ourlarge/pngtree-a-candy-cartoon-white-background-png-image_11440495.png",
       "id": "1"
     },
     {
@@ -196,6 +207,14 @@
       "title": "Hamburger",
       "price": "29.99",
       "image1": "https://iili.io/dUyCKns.webp"
+    },
+    {
+      "id": "a5fb",
+      "id_user": "1",
+      "quantity": 1,
+      "title": "Pizza1",
+      "price": "40",
+      "image1": "https://img.freepik.com/premium-photo/delicious-pepperoni-pizza-png-style-white-background_1115207-8912.jpg"
     }
   ]
 }
