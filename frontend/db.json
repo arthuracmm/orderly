@@ -2,7 +2,7 @@
   "produtos": [
     {
       "title": "Hamburger",
-      "description": "aaaaaaa",
+      "description": "HAMBURGER TRES QUEIJOS",
       "price": "29.99",
       "image1": "https://iili.io/dUyCKns.webp",
       "image2": " https://iili.io/dg9urN4.webp",
@@ -10,17 +10,6 @@
       "image4": "https://iili.io/dg9uiVS.jpg",
       "category": "Lanches",
       "id": "49d0"
-    },
-    {
-      "title": "Mostarda",
-      "description": "aaaaaaa",
-      "price": "49.99",
-      "image1": "https://iili.io/dg9urN4.webp",
-      "image2": "https://iili.io/dUyCKns.webp",
-      "image3": "https://iili.io/dg9uPx2.jpg",
-      "image4": "https://iili.io/dg9uiVS.jpg",
-      "category": "Bebidas",
-      "id": "e82f"
     },
     {
       "title": "Pizza do gui",
@@ -131,6 +120,17 @@
       "image3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7i2r3RlYLqZWjDSv_ZO6A65atztnjv4J4eQ&s",
       "image4": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhASExARERURFxgTGBYXEhUVGhcSFRYWIhcWGhcYHiggGBooGxMTITEiJSktLi4uGR8zODMtNygtLisBCgoKDg0OGxAQGy0lICUvNy0wLS8rLS0tLSs3NS43LSstNS03NS4vKystMS0vLi0tLystLS0tNy0tMjAxLi0xLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABAUDBgIHCAH/xABJEAACAQIEAgYECQgHCQAAAAABAgADEQQSITEFUQYTIkFhcTKBkbEHI0JSc6GywdEkMzRUcpLT4RQXU2Kis/AVFjVEgoOj0vH/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAQIDBAUG/8QALREBAAICAQIDBgYDAAAAAAAAAAECAxEhBDESQVEFImFxocETMoGR0fAU4fH/2gAMAwEAAhEDEQA/AO8YiICIiAiIgIiICIiAiIgfCZ8zeBhu6IDN4GM3hPhPn7Igc4iICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAmLE1giO52RSx8lFz7plld0i/RMXb+xq/YaBp9XpPXvriVS4DECirBM3ybkgm204jpfVUnNiEcKRtRXUd4uH0PtmpcVrnOqbBQvZ5EgX9ciVtyBOO2e0TMPosXs3DekWnzh2O/T2newpM1u8Nv5aT4nT+jmC5GBJtqwtfz7tj7J1ilUqrb6X+6QK+I+NQhrFCbgiwN1Hyj3j7z67UyXsz6jo+mw1iZjziO8u3q3wg0l3pNfXTMp28tJn/32TqmrCk5VTtdb252vOoa3EczJmBIR0dioB7KnUW0vcXk/BYg5OyxIDAd4uRfKbb66xa+Skblnj6Xpc1ppj9I55/X7N6Pwq4e35qqTyAW/vkYfCMXc5W6tTsDRpuR5kVhf2Tr/AB2AysuIpKbKQzoBqpv6ajlfu7rctpWK4qhDgVHX0iWyDtL8Zanqe4Mo9XdJ/wAjevDG2EdB4ZmMltTH1/d3pwfG9dRSpp2s222jEfdJs1T4LmJ4bhyTf0/qdvwm1zpebJERCCIiAiIgIiICIiAiIgIiICIiAiIgJA49+jYr6Gp9hpPkLjQ/J8R9FU+wYTHd0fxFj1gJJJIU3OvcPunxhrac8YCWp7ehT8fkD8JNpYTW7W1nnXj3pfX4baxV36KfEjskc5A4JiaPX13r0yyLcBspYIc2l7bX2ufCbJxHCqFJHdb3/heROE9DK9UHE0qQrZ+sF1qmlVpurNYLchWBGQ+u3nt08xFp28/2tPixV16omK40jBkpU+sG+gtkH7Q2JldwbGZSpB2N/Ybj7pKr9EsbiFN6FQqrZA1Wp1IVrAE9XozHNe5KnTbwocOgUkZr5XK32BW5ANvVf1zTNMTHEuL2b4ovM68m24fEEag7TFxzhIrKa1MdsDtL87+f+uU4UKYto17fhLXh9NsjMO47ffOCu623V9Dnx482Pw37OyPgu/4ZhPKp/mvNqlF0I/QqGgHp7fSPL2erWdxEvjslfDea+kkRElQiIgIiICIiAiIgIiICIiAiIgIiICRuJi9GsOaP9kyTMONHxdT9lvcYIdIrTHYPJE9pUfjPuOxioRrmbcnuWw218NbyNiquUJ+ynfyVZq3EsWKxUUlclWAapYhVRjva+vmQAO7ecNK+O8w+nz5owYa23zriPVsnFOJKgu7i5zAKNWzDNfs3uBmW1zbfS8tOgHTwUVaniKbLRLZlqIGZlZsoK5ACXF7G63Op000ok6IML5kYqh1ZBmVhpfQdtTpcCzAc9dMNDClc+TtKwIDA3AOt/QN8t2IK+I0OonVHT1iHh5vaGTNxPb0/vLa+l/wnYfKqYJ3xFRvlVEdFTxIYAk+HhqZ1rh64bsEKGXQE5VuB4k2J2075Pfh61Hz5QrO17AAaXIN+1Ze0OelpyxfCUay07u4uWVBnA0GVcy9lGt8428O6TGGsQzp1N6TuEjC4groVOnhbY2Nx52E2/ozVDK5B2tpy3nX1ejUR6S5MqvmLItUk5Ba4OoUbDsgm9t5unQjFK6OwFrkad97H+U5suHwW29rpet/HxzWe/o7j6PgDD0rCwsfYWMsZB4H+Ypfs/eZOnXHZ4OT88/MiIkqEREBERAREQEREBERAREQEREBERATHifQf9k+6ZJwrjst5H3QPPnSGvlpg22VPrVRNHwuMamptcioSSpW47CkBgeYFSp5X1m0dL3+KUAE6qNPKUr8PCUGNiXZdTc2C32sDY7De8x6avEz8Xp+1cnvUp6VhI4jxLF1lt1xNLcIhyAX+cPleZJ79hL3gONp02Wkxp4lQty4dFyZjqquT8Zds22gzDXWw1TB4hkpU7i17a/dLT46tTzdWOrp6F27IBO3pHU32yi86tPH8XlptHFsVhkpNWTDGvlJzO7gojn5JLEkNqNFGt5q+LK1PjaFbNUsLgEIV+cSvyV9EDU6Abk2nHCUaqpSIbrQMxVWckISxBID5RmOUbXOvnKvF8RcH0QDyykeqxg3zww8QxLlsjNmItqPnEH69Ztfwd4pQ9Rbi5ANvK/4zWuj9Dr6uIZiQFQvo5XUeiL9/aKn1HzknhKNSrgFib3sedwfrmeSPdmXV0ttZqw9P8AP5PR/ZEsJV9Fz+R4XxpIf8IlpIjsrk/NPzIiJKhERAREQEREBERAREQEREBERAREQE41dj5GcpxfY+UDzX0m16sA228Pkj1d8p+NYsomRrhiBcFe4bWOzC1tRNir4Ra9VUIuqgXIbUdkX277WM1zpJw1Er2p9YEOoFTfY3t32uDvIwxMUdHX3rfqJ+UR9IRuDYpyHtZ7qQ1M2GZAL3W+mYWuLaggWvLLglYnNTJAVt9dTba55eWvIicE4LUWzUrVMqq5K2a1hcXAF7WAIa1mvveYkoqoVx2tbEEmynuGlr+R08O6auJl4rWIWyMAuvZFgt+dht7z33lIXYhjcKBoSTte+gG5Jsdu6/deSsUQx2A8FAUewaT5Qwz1F6umjOFLMSBc3ZVHaOwACE3OgzGEwxcDxeQVbEDOANb67cr94lphKjZ0zAja1wRcbC1+6VHCqBNTsuQBftKQSD4H17zaa/CaVMpUTrW0BLVG1uSb6AAWt3yJ5rpakxXJE/GHobot+h4P6Gn9gS0lb0bP5JhDe96NI353RdZZTOOzS35pIiJKpERAREQEREBERAREQEREBERAREQE+NsZ9iB0HhuFr1yupILqxqXLWIVgoy2tY3t9c0rjWMNWqENZFADnM11ACKxCnTVjYKPFvXN/TqjUpisSAA4QBymZ+sFgbbjfTwnV2Pr2NUINKgZSSik6up0NtDdRqLHcS0di3NpmXPBcSyMpsRa5uo1ub8iOe9++bCnSNjTI/pAdQALVqSVDfTWzq1hdgNz7yNQp3KrZWCnQbnMRfXbtEZiNO71ydRol0qbAk2OgFrlTcC1h6Nu6w9kconS3bihF7Nh1bU3GHo6WYD5psdRtz8zIfEuIs6gVK7OD8lW7A007AsBrfWw9ffEyE5uzl0y+kDbtL39/cJGrppYged99re765PKOE3gjqtS97IxZSNCRlQFSQB3k/UfObL0iKJUp0Ee9MqjMCjF7MLsL2HZudgBewmvdGK7KWXIKiuyZgUVjpmAAcglb5iLC17i97Sx4tVp56YRDmFNLNm/u69kCxuSdYNcvSnRdbYPBDXShRGu/5tZZyu6OH8kwn0FL/LWWMosREQEREBERAREQEREBERAREQEREBERAREQPPuH47SWvUSpTNQ0TUAJRHCfGXDam4sLi45iddY2upV7WBNgACTu9+8mbVQxfVcRqki6tUZWG/Zz39W3vnHjtfDpWeg1LMAxDMKakg5gBlJI0Fr+jrfusJO9E93PhWFpjC1M6I5VRYFrEEgWIHIDW/+jTrXGVwVDGwCks1xvrYaE7jWbFwMddRrgOCAyqoYWBOcC4NiUHaBt59+s1HjNJ1YsoA5229U0iWOmZqigMbbX3J5GXlDhAp0FqOlM1KozM7MpFNfkquhymxsbanXwB1ng+HeqwNiVuCfGx2E3rjSrTw1OxTPuNAxtqL2K6EW7/YdxG9ya017geNSguKSocrdbhayCx1NKoxby7Lg2JG/OYOK8WS9MJ1QyU0FwiE5lQX7Zu1r30vbwmXh3EaVED4pnd7s7FEqXBv2AGOgO5bcnTTeW3TTGDLSUIo6wLU2XY+iQO6+bfS4FpVrEPQ/R1bYTCDlRpD/wAaywkLgv6Ph/oqf2BJsqkiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgeUekmmLqm9r1G230e15B4guYmqzEOtgS1xnvuWvqHvrt+MsMXRetxB0sNKpH/QGZyT42JmNitRq1QgDOcxJ5sxN/ukkufCOPpTotT6twodXzCzHNcEg3IAFxodfvkLE8SW5sGYeOl/C3d7ZdmlTdVsFugAIDWGtrNvYX0v439VZjaCqSAynLyN7+Vu7Tv18thblTUejN0cxIXD9kahmDG3yWIyn2hh615yw4tiMwUHWygDXkf5yl4Q2QXHMgg3sQdwfA+H1GWFemTqMyqR6RBIA8T3nQ7b/VLQpMcovC8LS7b1MUlL5IUozt3agAcr213lxT4JWx+TEIQqqzUnFRgpWmgvTbXmptp3+E1TFLuRcAMCOdvGW+JdgjAlspAO5FyPL1yktqcTD1Hw1LUaI5Ig9iiSZH4eLUqQ5Iv2RJEqEREBERAREQEREBERAREQEREBERAREQE41WsCeQJnKcag0PlA804BAKlTGqSVqLkqKTrSruQGH0bfJPcCVOoBOv4Z91Oxt7zJnB+JGhXZioqI5anUpk2V0YkEG17WvcHuIkFKIBqNTLNTDLozAugudG2zDftKLc7XtESSmrhbqbN53F/KQcTSKy1olQpzFiTyZQPs3PtlZxCoOenK9+UvMQpEy+cLBN19cs8TTIQKTf5VrkgE8h3bbyn4fVGY9oD1jaW9WoLC6g+JZ//a0tXsrbup8WdvE+7/7Nw4pgAcGtS2uQe7WaZjGJI8J2JRObAEfNU+8yktId94cWRByA90yT4o0E+yqSIiAiIgIiICIiAiIgIiICIiAiIgIiICIiB5OFD4wNmpqC7HtVETRWN7BiLnTu5gSBSrsjrURyjocysrWIPMEbS84XVYGtlXMQ6fN2NZrr2tNQSPXOJxroCppilap1no3IBqG/gQBcaDumXjneoj6uuOnrNYtNu+/JDp4iu6VHFW6p6Wo91tZE/wBoVN8/1D8JuSmnWFamXQ/HJk9H0EWi7a8vT9h5Sr4vjPjqnVqrisqJbLvYNt+/KVzWmdab5ehpSsWi/wAO3nz8fl+6lw/FaysrLVdWBFipsR5ESXXxQINqFIZV7RDVhmuwGYjrLA3YaKAPCS8UmalmNIqwFNLaG5zLa1tbkNt4y2wnD1XC1l6vNia9M5VN81MdaipYC+ujueQHdY37+l1krP8A15fW1/x7V89/o1TEU1ZE7FNGLNYq1Q2UBbBgzlQGJbWwIK6m222cFxBbDYimbgqu2oOu4t5ynwqq9J+v6xGHVIjKo1C9bdipF3/PU9Ba9gbyXhKppVEplldXRkRwVOdO4EAnKymwKnUX5AE5+7PZrbHasROuHpmIiUUIiICIiAiIgIiICIiAiIgIiICIiAiIgIiIHlLA48U3derLl3Fhny9pKhK62N9SJmq8ezFs1AEFMti4NmzElx2fHbw3ldS/PL9IPtzA+585nOOszuXRXqcta+Gs8fKFg3FF61qoo2uxbLnFgOrCgXK8xe/q03mUcdAaiww4Bpm5+M9MdWVt6GnPv29cqDPhETiqmOqyx2nz32juuK/GHZWKoAuZGtmDZGp5LFgU1ByDw1seUyYDigqNWaozLWChqVQWshp52NMrcBlbNY+F/GUlNypuDY/d3gg7jwMz06AqEZLKe9d7eKcx4HUeI1GuG/4XEdmPURPUc2nc6/3x94+3a14rw5zXBbE0XzEZqiK3VIX0Fjax1FiPeNZWYpmGdSRmQkKRoRUUaMPBrW9nITnxCrVK5TUZ0BsLscoNtBZtQNdPqnPi4VVqlCzCpRR1LG5V1amTc9+gP706MtaeGfDHZhgyZPFq88TE/Ts9WYRy1Omx3ZVJ8yBeZpiwosiD+6PcJlnM0IiICIiAiIgIiICIiAiIgIiICIiAiIgIiIHkil+fX6UfbkeodT5yXVW2JYfNrkeyp/KTOjfF1wtd6r4dcSrI1M02IA7Toc1yra2Qjb5UiE6UuYeE+ZhN9Xp/SyoDwundd2DoMxuDqDRI3BPs5SJxLpqr06qU8ClE1QwzB1YrmSoot8WL2zo2+6+OkpaYWE+B7WINiNQQba85umI6bIVAXh6U3VcocVQTcUqiKxHVa261mtfuXlJL/CBSzFv9kUfLrhbdz/Y63617+rlCOWu4HF0qy9VVVFY+jUCqtz4kDRvqMr+MYJqIKfOUjN3NuT5EaaHlPmKxgqVatR0zdYSQua2UE6C4AvZQF7plocQzI1Gr2lK2VjurW0F+Xj90x1akzNe3p/D0ceTHniK5Z1byt9rfaf3etKQsAOQE5RE2eaREQEREBERAREQEREBERAREQEREBERAREQPK3FUP9LrZgVaniHVgRYlOuIRrewfu8zI5p3DdoA6WuxFrKNvC5+qekuM9D8JiWLvRC1DftqADcjUkEFSbd5Bmp1PgZwhJP8ASsYLm9gaNtf+3KTWXRXJXvLp6g6qoBVHKk69YddiNLbd3tmVqibdXT10v1p0/wAM7Y/qUwn65jv3qH8KP6k8J+uY796h/ClPwm8dZqNa+kfw6fsoQ3TMRpcVnuTzC/62mKpWUhgKLpo2pqO2mU6WOk7mHwJ4L9bx379D+DPv9SeB/Wsf+/h/4MtFP7yyt1O+Ij6R/DpwYOn1d9M1vSzHbnbbxt7ZB4dRL16ChS2Z6YsBfQsLzvJPgTwA/wCYxp83ofdRm1dH+hOCwZDUqALiw6xrM2mx2sD4gXk1rMb5Z5clb61GtNiiIl2JERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQP/2Q==",
       "category": "Brinquedos"
+    },
+    {
+      "id": "8838",
+      "title": "Mostarda",
+      "description": "Mostarda Três queijos",
+      "price": "49.99",
+      "image1": "https://iili.io/dg9urN4.webp",
+      "image2": "https://iili.io/dUyCKns.webp",
+      "image3": "https://iili.io/dg9uPx2.jpg",
+      "image4": "https://iili.io/dg9uiVS.jpg",
+      "category": "Fast Food"
     }
   ],
   "comments": [
@@ -147,8 +147,8 @@
   ],
   "category": [
     {
-      "name": "Eletrônicos",
-      "image": "https://images.kabum.com.br/produtos/fotos/564916/notebook-gamer-acer-nitro-v15-intel-core-i5-13420h-8gb-ram-geforce-rtx-3050-ssd-512gb-15-6-fhd-ips-144hz-windows-11-preto-anv15-51-58az_1715197005_gg.jpg",
+      "name": "Doces",
+      "image": "https://down-br.img.susercontent.com/file/b87acba486591bfbde1d0ca6409c40e1",
       "id": "1"
     },
     {
@@ -196,14 +196,6 @@
       "title": "Hamburger",
       "price": "29.99",
       "image1": "https://iili.io/dUyCKns.webp"
-    },
-    {
-      "id": "a5fb",
-      "id_user": "1",
-      "quantity": 1,
-      "title": "Pizza1",
-      "price": "40",
-      "image1": "https://img.freepik.com/premium-photo/delicious-pepperoni-pizza-png-style-white-background_1115207-8912.jpg"
     }
   ]
 }
