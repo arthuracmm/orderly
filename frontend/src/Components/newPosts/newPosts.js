@@ -82,7 +82,9 @@ function NewPosts() {
           );
         })}
       </div>
+      
     </div>
+    
   );
 }
 
