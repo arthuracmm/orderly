@@ -1,29 +1,21 @@
 import React, { useState } from 'react';
-import "./login.css"
+import "./admin.css"
 import axios from 'axios'
 import {useNavigate} from 'react-router-dom';
 
-function Login() {
+function Admin() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const navigate = useNavigate()
 
-  function handleSubmit(event) {
+  function handleSubmit(event){
     event.preventDefault();
-  
-    axios.post('http://localhost:8081/login', { email, password })
+
+    axios.post('http://localhost:8081/admin', { email, password })
       .then(res => {
-        if (res.status === 200) {
-          // Verifica o papel do usuário
-          if (res.data.role === "admin") {
-            alert('Login bem-sucedido como administrador!');
-            navigate('/addpost'); // Redireciona para a página de administrador
-          } else if (res.data.role === "user") {
-            alert('Login bem-sucedido como usuário!');
-            navigate('/'); // Redireciona para a página de usuário comum
-          } else {
-            alert('Erro desconhecido no login.');
-          }
+        if (res.status === 200 && res.data.message === "Login Bem Sucedido") {
+          alert('Login bem-sucedido!');
+          navigate('/');
         }
       })
       .catch(err => {
@@ -35,13 +27,12 @@ function Login() {
         console.error(err);
       });
   }
-  
 
   return (
     <div className='login-content'>
         <form onSubmit={handleSubmit} className='login-form'>
           <div className='login-inputs'>
-            <h1>Login</h1>
+            <h1>Administrador</h1>
             <div>
                 <label htmlFor="email">Email</label>
                 <input type="email" placeholder='Email' onChange={e => setEmail(e.target.value)}/>
@@ -57,4 +48,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Admin;
